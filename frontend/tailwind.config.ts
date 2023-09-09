@@ -1,6 +1,8 @@
+const withMT = require("@material-tailwind/react/utils/withMT");
+
 import type { Config } from 'tailwindcss'
 
-const config: Config = {
+const config =  withMT({
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,6 +10,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // add poppins font
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      // add custom colors
+      colors: {
+        primary: {
+          50: '#57375D',
+          100: '#AE445A',
+          200: '#F39F5A',
+          300: '#451952',
+        },
+      },
+        
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -16,5 +32,5 @@ const config: Config = {
     },
   },
   plugins: [],
-}
+})
 export default config
