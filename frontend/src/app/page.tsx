@@ -5,7 +5,7 @@ import Introduction from "@/components/home/Introduction";
 import Footer from "@/components/Footer";
 export default function Home() {
   return (
-    <div>
+    <div className="space-y-8">
       <Navbar />
       <Hero />
       <Introduction />

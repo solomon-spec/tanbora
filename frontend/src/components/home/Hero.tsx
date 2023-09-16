@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import placeHolder from '../../../public/place-holder.png'
+import heroImage from '@/assets/hero-image.jpg'
 export default function Hero(){
     return (
-        <section className="font-poppins mt-10 w-11/12 mx-auto space-y-6">
-            <div className=" text-center md:w-1/2 space-y-6">
+        <section className="font-poppins mt-10 w-11/12 mx-auto space-y-6 grid grid-cols-1 place-items-center md:grid-cols-2">
+            <div className=" text-center md:text-left space-y-6">
                 <h1 className="font-bold text-3xl">
                     Empowering African High School Students
                 </h1>
@@ -11,7 +12,7 @@ export default function Hero(){
             </div>
             <div className='mx-auto w-full'>
                 <Image
-                    src={placeHolder}
+                    src={heroImage}
                     alt = 'hero image'
                     className='rounded-md block mx-auto w-full'
                     />
