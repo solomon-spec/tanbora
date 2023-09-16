@@ -20,19 +20,21 @@ export default function introduction() {
             connect with diverse communities, and chart their unique path to
             success.
           </p>
-          <Link
-            className="bg-primary-50 px-12 py-3 rounded-full text-white"
-            href=""
-          >
-            Support us
-          </Link>
+          <div className="m-4 flex flex-wrap justify-center gap-4">
+            <Link
+              className="bg-primary-50 inline-block px-12 py-3 h-12 rounded-full text-white"
+              href=""
+            >
+              Support us
+            </Link>
 
-          <Link
-            className="bg-primary-50 px-12 py-3 h-12 rounded-full text-white ml-8"
-            href=""
-          >
-            Join us
-          </Link>
+            <Link
+              className="bg-primary-50 inline-block px-12 py-3 h-12 rounded-full text-white"
+              href=""
+            >
+              Join us
+            </Link>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 gap-4">
@@ -107,7 +109,7 @@ export default function introduction() {
       <section className="w-11/12 mx-auto">
         <h2 className="font-bold text-2xl text-center">What We Offer</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className=" text-white bg-gradient-to-br from-primary-50 via-primary-50 to-primary-300 p-4 rounded-lg text-center space-y-6">
+          <div className="max-w-md text-white bg-gradient-to-br from-primary-50 via-primary-50 to-primary-300 p-4 rounded-lg text-center space-y-6">
             <MdLocalOffer className="text-5xl mx-auto" />
             <h3 className="font-bold text-center text-xl">Passion Discovery</h3>
             <p>
@@ -115,28 +117,34 @@ export default function introduction() {
               and strengths.
             </p>
           </div>
-          <div className=" text-white bg-gradient-to-br from-primary-50 via-primary-50 to-primary-300 p-4 rounded-lg text-center space-y-6">
+          <div className="max-w-md text-white bg-gradient-to-br from-primary-50 via-primary-50 to-primary-300 p-4 rounded-lg text-center space-y-6">
             <MdLocalOffer className="text-5xl mx-auto" />
-            <h3 className="font-bold text-center text-xl">Passion Discovery</h3>
+            <h3 className="font-bold text-center text-xl">
+              Interest-Based Communities
+            </h3>
             <p>
-              Take quizzes, surveys, and assessments to uncover your interests
-              and strengths.
+              Connect with students who share your passions, and participate in
+              clubs and events.
             </p>
           </div>
-          <div className=" text-white bg-gradient-to-br from-primary-50 via-primary-50 to-primary-300 p-4 rounded-lg text-center space-y-6">
+          <div className="max-w-md text-white bg-gradient-to-br from-primary-50 via-primary-50 to-primary-300 p-4 rounded-lg text-center space-y-6">
             <MdLocalOffer className="text-5xl mx-auto" />
-            <h3 className="font-bold text-center text-xl">Passion Discovery</h3>
+            <h3 className="font-bold text-center text-xl">
+              Learning Resources
+            </h3>
             <p>
-              Take quizzes, surveys, and assessments to uncover your interests
-              and strengths.
+              Access a library of educational content, articles, videos, and
+              tutorials.
             </p>
           </div>
-          <div className=" text-white bg-gradient-to-br from-primary-50 via-primary-50 to-primary-300 p-4 rounded-lg text-center space-y-6">
+          <div className="max-w-md text-white bg-gradient-to-br from-primary-50 via-primary-50 to-primary-300 p-4 rounded-lg text-center space-y-6">
             <MdLocalOffer className="text-5xl mx-auto" />
-            <h3 className="font-bold text-center text-xl">Passion Discovery</h3>
+            <h3 className="font-bold text-center text-xl">
+              Extracurricular Activities
+            </h3>
             <p>
-              Take quizzes, surveys, and assessments to uncover your interests
-              and strengths.
+              Join clubs, competitions, workshops, and volunteer opportunities
+              to build new skills and make an impact.
             </p>
           </div>
         </div>
